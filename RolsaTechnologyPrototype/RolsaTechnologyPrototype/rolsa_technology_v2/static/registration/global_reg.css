@@ -1,0 +1,119 @@
+/* importing the font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global registration styles 
+mainly initialises the sidebar
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+}
+
+#nav {
+    position: fixed;
+    text-align: left;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #646b33;
+    padding: 10px;
+    z-index: 2;
+}
+
+#nav h1 {
+    position: relative;
+    bottom: 96px;
+    background-color: #646b33;
+    padding: 5px;
+    color: #d6d99a;
+}
+
+#nav-links {
+    position: relative;
+    bottom: 80px;
+}
+
+#nav-links a {
+    color: #d6d99a;
+    font-size: 20px;
+}
+
+#nav-links a:hover,
+#nav-links a:focus {
+    color: #f2c42f;
+}
+
+.pfp-settings {
+    text-align: center;
+}
+
+.pfp-settings svg {
+    fill: lightgray;
+}
+
+.pfp-settings svg:hover,
+.pfp-settings svg:focus {
+    fill: darkgray;
+}
+
+.documents {
+    color: #d6d99a;
+}
+
+.documents h2 {
+    font-size: 25px;
+}
+
+.documents a {
+    color: #d6d99a;
+    text-decoration: none;
+}
+
+.documents a:hover,
+.documents a:focus {
+    color: #f2c42f;
+}
+
+.main {
+    position: relative;
+}
+
+#text-increase,
+#text-decrease,
+#dark-mode-switch,
+#lightmode-switch,
+#reset {
+    background-color: #d6d99a;
+    border: solid 2px #d6d99a;
+    padding: 5px;
+}
+
+#menu {
+    background-color: #d6d99a;
+}
+
+#menu li {
+    color: #444647;
+}
+
+#menu svg {
+    fill: #444647;
+    margin-right: 5px;
+}
+
+#menu li:hover {
+    background-color: #8f8e4d;
+}

@@ -1,0 +1,16 @@
+{% extends 'global.html' %}
+{% load static %}
+{% block title %} Energy Usage Calculation {% endblock title %}
+{% block head %}
+{% endblock head %}
+{% block content %}
+<h1>
+    Hello World
+</h1>
+<form method="post">
+    <h2>Enter Energy Values to Calculate:</h2>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" id="sub">
+</form>
+{% endblock content %}

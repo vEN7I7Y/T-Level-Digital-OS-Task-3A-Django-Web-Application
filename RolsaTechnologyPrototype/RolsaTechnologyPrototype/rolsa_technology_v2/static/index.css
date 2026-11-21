@@ -1,0 +1,155 @@
+.collage1 img {
+    width: 15%;
+    height: 15%;
+}
+
+.collage1 {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.aboutus {
+    background-color: #d6d99a;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #444647;
+}
+
+.aboutus h2 {
+    text-align: center;
+}
+
+.aboutus p {
+    margin-left: 10px;
+}
+
+#p1 {
+    text-align: center;
+}
+
+.articles {
+    background-color: #d6d99a;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.articles-list {
+    text-align: center;
+
+}
+
+.articles-list li {
+    display: inline-block;
+    color: #444647;
+}
+
+.article1,
+.article2,
+.article3 {
+    background-color: #d1e5b5;
+    width: auto;
+    padding: 3px;
+}
+
+.article1 h4,
+.article2 h4,
+.article3 h4 {
+    font-size: 15px;
+    background-color: #8f8e4d;
+    width: 100%;
+    padding: 5px;
+}
+
+.article1 p,
+.article2 p,
+.article3 p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+#title {
+    background-color: #646b33;
+    text-align: center;
+    padding: 5px;
+    color: #444647;
+}
+
+#article-button {
+    background-color: #1a3c2a;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+    margin-left: 45%;
+}
+
+#article-button:hover,
+#article-button:focus {
+    background-color: #2ca23b;
+}
+
+.collage2 img {
+    width: 15%;
+    height: 15%;
+}
+
+.collage2 {
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.foot {
+    position: relative;
+    width: 100%;
+    background-color: #1a3c2a;
+    height: 250px;
+}
+
+.footer-info p,
+.footer-info h2 {
+    color: #8f8e4d;
+    margin-left: 15px;
+    position: relative;
+}
+
+.documents {
+    color: #8f8e4d;
+    text-align: right;
+    bottom: 125px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.socials {
+    background-color: #616265;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.socials li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.socials li svg {
+    fill: #8f8e4d;
+}
+
+.documents a {
+    text-decoration: none;
+    color: #8f8e4d;
+    font-size: 16px;
+}
+
+.documents a:hover,
+.documents a:focus {
+    color: #f2c42f;
+}
+
+.socials svg:hover {
+    fill: #f2c42f;
+}

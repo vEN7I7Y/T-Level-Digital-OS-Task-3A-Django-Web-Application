@@ -1,0 +1,37 @@
+<!--allows global_reg to be another global.html but for the registration system-->
+{% extends 'registration/global_reg.html' %}
+<!--allows for static to be loaded-->
+{% load static %}
+<!--the title of the webpage-->
+{% block title %} Login {% endblock title %}
+<!--allows for custom stylesheets-->
+{% block head %}
+<link rel="stylesheet" href="{% static 'registration/login.css' %}">
+
+{% endblock head %}
+<!--the main content of the page-->
+{% block content %}
+
+<div class="main">
+    <h2>
+        Login
+    </h2>
+    <!--initalises the form, this uses django's built in login form instead of a custom one-->
+    <form method="post">
+        <!--CSRF token to secure the form-->
+        {% csrf_token %}
+        {{ form }}
+        <!--submit button-->
+        <button type="submit" id="sub">Log In:</button>
+    </form>
+    <!--other links to take you elsewhere, e.g the admin login-->
+    <div class="other-links">
+        <ul>
+            <li><a href="{% url 'signup' %}" class="sign-up">Sign Up Here</a></li>
+            <li><a href="{% url 'admin:index' %}" class="sign-up">Login to main dashboard</a></li>
+        </ul>
+
+    </div>
+
+</div>
+{% endblock content %}

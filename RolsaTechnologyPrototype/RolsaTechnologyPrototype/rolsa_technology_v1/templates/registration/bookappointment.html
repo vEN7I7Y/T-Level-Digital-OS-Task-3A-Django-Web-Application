@@ -1,0 +1,13 @@
+{% extends 'global.html' %}
+{% load static %}
+{% block title %} Book An Appointment {% endblock title %}
+{% block head %}
+{% endblock head %}
+{% block content %}
+<form method="post">
+    <h2>Book Here:</h2>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" id="sub">
+</form>
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends 'registration/global_reg.html' %}
+{% load static %}
+{% block title %} {{user.username}}'s Profile{% endblock title %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'registration/profile.css' %}">
+{% endblock head %}
+{% block content %}
+<div class="subheader">
+    <h2>
+        Welcome: {{user.username}}
+    </h2>
+
+</div>
+<!--Appointments Table-->
+<div class="appointments">
+    <h2>{{user.username}}'s Booked Appointments</h2>
+    <table>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Date Scheduled</th>
+        <th>Time Scheduled</th>
+        <th>Status</th>
+        {% for x in data %}
+        <tr>
+            <td>{{x.appointment_id}}</td>
+            <td>{{x.appointment_type}}</td>
+            <td>{{x.appointment_date}}</td>
+            <td>{{x.appointment_time}}</td>
+            <td>{{x.appointment_status}}</td>
+            <td><a href="#">Cancel Appointment</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <ul>
+        <li><a href="{% url 'appointment' %}" id="book">Book an Appointment</a></li>
+        <li><a href="{% url 'carbonfoot' %}" id="carb">Calculate Carbon Footprint</a></li>
+    </ul>
+    <form method="post" action="{% url 'logout' %}" id="form">
+        {% csrf_token %}
+        <button type="submit" id="sub">Logout</button>
+    </form>
+</div>
+{% endblock content %}

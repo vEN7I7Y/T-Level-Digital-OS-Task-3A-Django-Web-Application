@@ -1,0 +1,21 @@
+{% extends 'registration/global_reg.html' %}
+{% load static %}
+{% block title %} Signup {% endblock title %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'registration/signup.css' %}">
+{% endblock head %}
+{% block content %}
+<h2>
+     here
+</h2>
+<div class="main">
+    <h2>Signup here</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" id="sub">Signup</button>
+    </form>
+    <br>
+    <a id="other-link" href="{% url 'login' %}">Back</a>
+</div>
+{% endblock content %}

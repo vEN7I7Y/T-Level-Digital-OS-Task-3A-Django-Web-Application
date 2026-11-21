@@ -1,0 +1,175 @@
+/*Because the global.css exists, I dont need to re-establish the header or page styles*/
+
+/*Styling for the collage at the top of the homepage*/
+
+.collage1 img {
+    width: 15%;
+    height: 15%;
+}
+
+.collage1 {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+
+/*Styles for the about us section of the homepage*/
+
+.aboutus {
+    background-color: #d6d99a;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #444647;
+}
+
+.aboutus h2 {
+    text-align: center;
+}
+
+.aboutus p {
+    margin-left: 10px;
+}
+
+#p1 {
+    text-align: center;
+}
+
+/*Styles for the articles section of the homepage*/
+
+.articles {
+    background-color: #d6d99a;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.articles-list {
+    text-align: center;
+
+}
+
+.articles-list li {
+    display: inline-block;
+    color: #444647;
+}
+
+.article1,
+.article2,
+.article3 {
+    background-color: #d1e5b5;
+    width: auto;
+    padding: 3px;
+}
+
+.article1 h4,
+.article2 h4,
+.article3 h4 {
+    font-size: 15px;
+    background-color: #8f8e4d;
+    width: 100%;
+    padding: 5px;
+}
+
+/*Previews for the articles displayed on the page*/
+
+.article1 p,
+.article2 p,
+.article3 p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+/*Titles for the articles displayed on the page*/
+
+#title {
+    background-color: #646b33;
+    text-align: center;
+    padding: 5px;
+    color: #444647;
+}
+
+#article-button {
+    background-color: #1a3c2a;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+    margin-left: 45%;
+    border-radius: 25px;
+}
+
+#article-button:hover,
+#article-button:focus {
+    background-color: #2ca23b;
+}
+
+/*The collage at the bottom of the page*/
+.collage2 img {
+    width: 15%;
+    height: 15%;
+}
+
+.collage2 {
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+/*Footer styles*/
+.foot {
+    position: relative;
+    /*Required so the footer stays down with the more content you add to it*/
+    width: 100%;
+    background-color: #1a3c2a;
+    height: 250px;
+}
+
+.footer-info p,
+.footer-info h2 {
+    color: #8f8e4d;
+    margin-left: 15px;
+    position: relative;
+}
+
+.documents {
+    color: #8f8e4d;
+    text-align: right;
+    bottom: 125px;
+    position: relative;
+    margin-right: 15px;
+}
+
+/*Social media icons and links*/
+.socials {
+    background-color: #616265;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.socials li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.socials li svg {
+    fill: #8f8e4d;
+}
+
+/*The privacy and cookie policy links*/
+.documents a {
+    text-decoration: none;
+    color: #8f8e4d;
+    font-size: 16px;
+}
+
+.documents a:hover,
+.documents a:focus {
+    color: #f2c42f;
+}
+
+/*More social icon styles*/
+.socials svg:hover {
+    fill: #f2c42f;
+}

@@ -1,0 +1,80 @@
+/*Starts off with the main content*/
+
+.main {
+    position: fixed;
+    background-color: #d6d99a;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: 30%;
+    color: #444647;
+    width: 50%;
+    height: 30%;
+    margin-top: 200px;
+}
+
+/*Form styles*/
+.main form {
+    text-align: center;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+/*Different button styles*/
+.sign-up {
+    background-color: #1a3c2a;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+}
+
+#sub {
+    margin-top: 10px;
+    background-color: #1a3c2a;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+}
+
+.other-links {
+    position: relative;
+    text-align: center;
+}
+
+.other-links ul {
+    text-align: center;
+}
+
+.other-links li {
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.other-links a {
+    border-radius: 25px;
+}
+
+.other-links a:hover,
+.other-links a:focus,
+#sub:hover,
+#sub:focus {
+    background-color: #2ca23b;
+}
+
+/*Error message styling*/
+.errorlist {
+    color: #ee1a48;
+}
+
+/*more form styles*/
+input {
+    background-color: #d1e5b5;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+}

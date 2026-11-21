@@ -1,0 +1,14 @@
+{% extends 'global.html' %}
+{% load static %}
+{% block title %} Payment {% endblock title %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'registration/payment.css' %}">
+{% endblock head %}
+{% block content %}
+<form method="post">
+    <h2>Pay Here:</h2>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" id="sub">
+</form>
+{% endblock content %}

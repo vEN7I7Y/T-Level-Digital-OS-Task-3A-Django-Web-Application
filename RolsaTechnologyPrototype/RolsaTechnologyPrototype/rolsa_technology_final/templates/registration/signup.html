@@ -1,0 +1,33 @@
+<!--allows global_reg to be another global.html but for the registration system-->
+{% extends 'registration/global_reg.html' %}
+<!--allows for static to be loaded-->
+{% load static %}
+<!--the title of the webpage-->
+{% block title %} Signup {% endblock title %}
+<!--allows for custom stylesheets-->
+{% block head %}
+<link rel="stylesheet" href="{% static 'registration/signup.css' %}">
+{% endblock head %}
+<!--the main content of the page-->
+{% block content %}
+<!--Invisible h2 element needed to fix a bug-->
+<h2>
+    here
+</h2>
+<!--main content-->
+<div class="main">
+    <h2>Signup here</h2>
+    <form method="post">
+        <!--CSRF token to secure the form-->
+        {% csrf_token %}
+        <!--intialises django's built in signup form-->
+        {{ form }}
+        <!--submit button-->
+        <button type="submit" id="sub">Signup</button>
+    </form>
+    <br>
+    <!--back link incase user changes their mind-->
+    <a id="other-link" href="{% url 'login' %}">Back</a>
+</div>
+<!--end of content-->
+{% endblock content %}

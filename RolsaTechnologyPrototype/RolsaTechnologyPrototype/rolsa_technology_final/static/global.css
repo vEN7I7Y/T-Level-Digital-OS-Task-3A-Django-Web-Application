@@ -1,0 +1,105 @@
+/*
+This is the global CSS Stylesheet for the pages that extend global.html
+*/
+/* importing the font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Setting root styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+/*Removing the underline from links*/
+
+a {
+    text-decoration: none;
+}
+
+/*Defining the font size and text color*/
+
+body {
+    font-size: 16px;
+    color: #444647;
+}
+
+/*Navbar styles*/
+
+#nav {
+    background-color: #646b33;
+}
+
+#nav h1 {
+    color: #d6d99a;
+}
+
+#nav-links {
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+#nav-links a {
+    color: #d6d99a;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#nav-links a:hover,
+#nav-links a:focus {
+    color: #f2c42f;
+}
+
+/*Styles for the settings and pfp dropdown in the navbar*/
+
+.pfp-settings svg {
+    fill: lightgrey;
+    display: inline;
+    margin-right: 15px;
+}
+
+.pfp-settings svg:hover,
+.pfp-settings svg:focus {
+    fill: darkgray;
+}
+
+/*Positioning of some content*/
+
+.main {
+    position: relative;
+}
+
+/*Styling the accessibility buttons in the settings dropdown*/
+
+#text-increase,
+#text-decrease,
+#reset {
+    background-color: #d6d99a;
+    border: solid 2px #d6d99a;
+    padding: 5px;
+}
+
+/*Styling of the menu itself and the items inside it*/
+
+#menu {
+    background-color: #d6d99a;
+}
+
+#menu li {
+    color: #444647;
+}
+
+#menu svg {
+    fill: #444647;
+}
+
+#menu li:hover {
+    background-color: #8f8e4d;
+}

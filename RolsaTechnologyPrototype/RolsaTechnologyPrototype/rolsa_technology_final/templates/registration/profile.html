@@ -1,0 +1,53 @@
+<!--allows global_reg to be a parent to all nessesary templates-->
+{% extends 'registration/global_reg.html' %}
+<!--allows stylesheets to be loaded-->
+{% load static %}
+<!--the title of the webpage-->
+{% block title %} {{user.username}}'s Profile{% endblock title %}
+<!--allows for custom stylesheets-->
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'registration/profile.css' %}">
+{% endblock head %}
+<!--main content-->
+{% block content %}
+<!--subheader for the page-->
+<div class="subheader">
+    <h2>
+        Welcome: {{user.username}}
+    </h2>
+
+</div>
+<!--Appointments Table-->
+<div class="appointments">
+    <h2>{{user.username}}'s Booked Appointments</h2>
+    <table>
+        <th>Type</th>
+        <th>Date Scheduled</th>
+        <th>Time Scheduled</th>
+        <th>Status</th>
+        <!--loops over the database and outputs data below-->
+        {% for x in data %}
+        <tr>
+            <td>{{x.booking_type}}</td>
+            <td>{{x.appointment_date}}</td>
+            <td>{{x.appointment_time}}</td>
+            <td>{{x.appointment_status}}</td>
+            <td><a href="#">Cancel Appointment</a></td>
+        </tr>
+        <!--end the for loop-->
+        {% endfor %}
+    </table>
+    <!--Links to book an appointment and to calculate your carbon footprint-->
+    <ul>
+        <li><a href="{% url 'appointment' %}" id="book">Book an Appointment</a></li>
+        <li><a href="{% url 'carbonfoot' %}" id="carb">Calculate Carbon Footprint</a></li>
+    </ul>
+    <!--Logout method, has to be a form-->
+    <form method="post" action="{% url 'logout' %}" id="form">
+        <!--secures the form-->
+        {% csrf_token %}
+        <button type="submit" id="sub">Logout</button>
+    </form>
+</div>
+<!--end of content-->
+{% endblock content %}

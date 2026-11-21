@@ -1,0 +1,88 @@
+.foot {
+    position: fixed;
+    width: 100%;
+    background-color: #1a3c2a;
+    height: 250px;
+    bottom: 0;
+}
+
+.footer-info p,
+.footer-info h2 {
+    color: #8f8e4d;
+    margin-left: 15px;
+    position: relative;
+}
+
+.documents {
+    color: #8f8e4d;
+    text-align: right;
+    bottom: 125px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.socials {
+    background-color: #616265;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.socials li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.socials li svg {
+    fill: #8f8e4d;
+}
+
+.documents a {
+    text-decoration: none;
+    color: #8f8e4d;
+    font-size: 16px;
+}
+
+.documents a:hover,
+.documents a:focus {
+    color: #f2c42f;
+}
+
+.socials svg:hover {
+    fill: #f2c42f;
+}
+.main-content{
+    margin-top: 5%;
+    background-color: #d6d99a;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #444647;
+}
+input{
+    background-color: #d1e5b5;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+}
+label{
+    text-align: left;
+    font-size: 18px;
+}
+#sub{
+    margin-top: 5px;
+    color: white;
+    background-color: #1a3c2a;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+}
+#sub:hover,
+#sub:focus{
+    background-color: #2ca23b;
+}

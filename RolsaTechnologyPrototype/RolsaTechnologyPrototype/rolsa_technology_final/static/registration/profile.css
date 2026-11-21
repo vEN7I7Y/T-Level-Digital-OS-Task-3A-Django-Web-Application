@@ -1,0 +1,87 @@
+/*Starts with the subheader*/
+.subheader {
+    background-color: #8f8e4d;
+    width: 100%;
+}
+
+.subheader h2 {
+    color: #444647;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*logout form styles*/
+#form {
+    text-align: center;
+}
+
+/*Appointment table styles*/
+.appointments {
+    float: right;
+    margin-right: 20%;
+    background-color: #d6d99a;
+    padding: 10px;
+    color: #444647;
+    width: 50%;
+    text-align: center;
+
+}
+
+.appointments td {
+    border: #444647 solid 1px;
+    padding: 5px;
+}
+
+.appointments td a {
+    color: #444647;
+    text-decoration: none;
+}
+
+.appointments h2 {
+    background-color: #8f8e4d;
+    padding: 5px;
+}
+
+.appointments th {
+    padding-right: 60px;
+}
+
+.appointments tr {
+    background-color: #d1e5b5;
+    width: 100%;
+    text-align: left;
+}
+
+/*Styles for the buttons under the appointment table*/
+.appointments ul li {
+    margin-top: 20px;
+}
+
+.appointments ul li a {
+    margin-top: 20px;
+    color: white;
+    background-color: #1a3c2a;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+}
+
+.appointments ul li a:hover,
+.appointments ul li a:focus {
+    background-color: #2ca23b;
+}
+
+/*The logout button styles*/
+#sub {
+    color: white;
+    background-color: #1a3c2a;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+}
+
+#sub:hover,
+#sub:focus {
+    background-color: #2ca23b;
+}
